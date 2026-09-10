@@ -9,7 +9,7 @@ export default function Home() {
     <div className="center-content">
       <div className="page-content">
         <h1>
-          P<Clock8 className="logo" strokeWidth={2.75} />cket Heist
+          P<Clock8 className="logo" strokeWidth={2.75} />cket heist
         </h1>
         <div>Tiny missions. Big office mischief.</div>
         <p className="intro-text">
