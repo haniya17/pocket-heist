@@ -1,0 +1,7 @@
+.card {
+  background-color: var(--color-light, #0a101d);
+}
+
+.bar {
+  background-color: var(--color-lighter, #101828);
+}
