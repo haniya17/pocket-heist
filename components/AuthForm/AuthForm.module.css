@@ -1,0 +1,28 @@
+@reference "../../app/globals.css";
+
+.form {
+  @apply mx-auto flex max-w-sm flex-col gap-4;
+}
+
+.label {
+  @apply text-sm text-body;
+}
+
+.field {
+  @apply w-full rounded-md border border-transparent bg-light px-4 py-2 text-heading outline-none;
+}
+.field:focus {
+  @apply border-primary;
+}
+
+.passwordWrapper {
+  @apply relative flex items-center;
+}
+
+.toggle {
+  @apply absolute right-3 text-body transition-colors hover:text-heading;
+}
+
+.switch {
+  @apply self-center text-sm text-body underline transition-colors hover:text-heading;
+}
