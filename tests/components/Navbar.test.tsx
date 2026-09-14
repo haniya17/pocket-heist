@@ -19,4 +19,21 @@ describe("Navbar", () => {
     expect(createLink).toBeInTheDocument()
     expect(createLink).toHaveAttribute("href", "/heists/create")
   })
+
+  it("renders the All Tasks, Pending, and Completed filter links", () => {
+    render(<Navbar />)
+
+    expect(screen.getByRole("link", { name: "All Tasks" })).toHaveAttribute(
+      "href",
+      "/heists",
+    )
+    expect(screen.getByRole("link", { name: "Pending" })).toHaveAttribute(
+      "href",
+      "/heists?filter=pending",
+    )
+    expect(screen.getByRole("link", { name: "Completed" })).toHaveAttribute(
+      "href",
+      "/heists?filter=completed",
+    )
+  })
 })

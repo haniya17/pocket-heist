@@ -12,6 +12,14 @@
   @apply font-bold text-xl;
 }
 
+.siteNav ul {
+  @apply flex items-center gap-6;
+}
+
+.navLink {
+  @apply text-body transition-colors hover:text-heading;
+}
+
 svg.logo {
   display: inline-block;
 }
